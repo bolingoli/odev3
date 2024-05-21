@@ -1,0 +1,7 @@
+fun updateData(newProducts: List<Product>) {
+    (products as MutableList<Product>).apply {
+        clear()
+        addAll(newProducts)
+    }
+    notifyDataSetChanged()
+}
